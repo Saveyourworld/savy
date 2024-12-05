@@ -177,7 +177,7 @@ st.write("---")
 
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 with col1:
-    st.image("assets/de-fotor-20241201153116 (1).png", width=550)
+    st.image("static/de-fotor-20241201153116 (1).png", width=550)
 with col2:
     
     st.markdown("<p style='font-size:18px; font-weight:normal;'><em>Hey there, 👋 do you really want to know me on a personal level? Then feel free to reach out 😎</em></p>", unsafe_allow_html=True)
