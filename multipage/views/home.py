@@ -1,30 +1,35 @@
 import streamlit as st
-import base64
 
+st.markdown(
+    f"""
+    <link rel="preload" href="https://github.com/Saveyourworld/savy/blob/Saveyourworld-patch-1/de-fotor-20241201153116%20(1).png?raw=true" as="image">
+    <style>   
+    .stApp {{
+        background-image: url("https://github.com/Saveyourworld/savy/blob/Saveyourworld-patch-1/de-fotor-20241201153116%20(1).png?raw=true");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #DEF0F5;
+    }}
+    @media (max-width: 768px) {{
+        .stApp {{
+            background-size: 750px 650px; /* Set a fixed width and height */
+ /* Adjusts size to fit smaller screens */
+            background-position: center; /* Position the background more effectively */
+        }}
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-
-# Function to encode local image to base64
-def get_base64_image(image_path):
-    with open(image_path, "rb") as img_file:
-        return base64.b64encode(img_file.read()).decode("utf-8")
-
-# Encode your local image
-image_path = "assets/de-fotor-20241201153116 (1).png"  # Replace with your actual file path
-base64_image = get_base64_image(image_path)
 
 # Add custom CSS for animations and styling
 st.markdown(
     f"""
     <style>
-    /* Background styling applied to Streamlit app container */
-    .stApp {{
-        background-image: url("data:image/jpeg;base64,{base64_image}");
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-        color: white;
-        font-family: 'Arial', sans-serif;
-    }}
+
     /* Center content in the page */
     .content-container {{
         display: flex;
