@@ -14,10 +14,6 @@ st.set_page_config(
 
 
 
-BASE_URL = st.secrets.get("BASE_URL", "http://localhost:8501")
-
-
-
 # --- PAGE SETUP ---
 home_page = st.Page(
     page="views/home.py",
@@ -64,11 +60,8 @@ privacy_policy = st.Page(
 
 
 
-
-
-
 # Dynamically set BASE_URL for local or hosted environments
-BASE_URL = st.secrets.get("BASE_URL", "saveyour.streamlit.app/")
+BASE_URL = st.secrets.get("BASE_URL", "https://saveyour.streamlit.app/")
 
 # CSS to hide Streamlit UI components (Main Menu, Settings, Rerun)
 hide_streamlit_ui = """
