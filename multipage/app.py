@@ -14,7 +14,7 @@ st.set_page_config(
 
 
 
-BASE_URL = st.secrets.get("BASE_URL", "http://localhost:8501")
+BASE_URL = st.secrets.get("BASE_URL", "https://saveyour.streamlit.app/")
 
 
 
@@ -62,6 +62,14 @@ privacy_policy = st.Page(
     icon="🔏",
 )
 
+base_url = "https://saveyour.streamlit.app/"
+st.sidebar.markdown(f"[Home]({base_url}/home)")
+st.sidebar.markdown(f"[About Me]({base_url}/about_me)")
+st.sidebar.markdown(f"[Contact Me]({base_url}/portfolio)")
+st.sidebar.markdown(f"[Contact Me]({base_url}/chatbot)")
+st.sidebar.markdown(f"[Contact Me]({base_url}/contact)")
+st.sidebar.markdown(f"[Contact Me]({base_url}/terms_of_service)")
+st.sidebar.markdown(f"[Contact Me]({base_url}/privacy_policy)")
 
 
 
