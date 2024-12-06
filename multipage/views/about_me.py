@@ -57,7 +57,7 @@ def show_contact_form():
 # ---- HERO SECTION ----
 col1, col2 = st.columns(2, gap="small", vertical_alignment="center")
 with col1:
-    st.image("assets/im1age.png", width=250)
+    st.image("assets/fineboy.png", width=250)
 with col2:
     st.markdown("<h1 style='font-size:60px; font-weight:bold;'>Saviour Raphael</h1>", unsafe_allow_html=True)
     st.markdown("<p style='font-size:20px; font-weight:bold;'>Senior Software Engineer, Web developer, Business Consultant, Singer and Songwriter.</p>", unsafe_allow_html=True)
