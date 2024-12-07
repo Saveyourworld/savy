@@ -3,7 +3,7 @@ import pandas as pd  # pip install pandas
 from PIL import Image
 import os
 import requests
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 
 
     
@@ -55,16 +55,14 @@ def load_lottieurl(url):
 
 
 # ---- LOAD ASSETS -----https://lottie.host/7b01135c-543a-45d3-8851-2510b26f466a/GQg9v7nMr9.json
-lottie_coding = load_lottieurl("https://lottie.host/ede2ffe2-8883-4e5c-bd85-a83664225981/vvMkZVteTV.json")
-img_contact_form = Image.open("fan.webp")
-img_lottie_animation = Image.open("IMG_1715.jpeg")
+#lottie_coding = load_lottieurl("https://lottie.host/ede2ffe2-8883-4e5c-bd85-a83664225981/vvMkZVteTV.json")
+#img_contact_form = Image.open("fan.webp")
+#img_lottie_animation = Image.open("IMG_1715.jpeg")
 
 
 left_column, right_column = st.columns(2)
 with right_column:
     st_lottie(lottie_coding, height=300, key="coding")
-
-#https://lottie.host/ede2ffe2-8883-4e5c-bd85-a83664225981/vvMkZVteTV.json
 
 st.title(f"My Portfolio", anchor=False)
 st.write("##")
@@ -75,7 +73,7 @@ if st.button("📩 Contact Me"):
 
 
 
-# Image URLs (replace with your actual image URLs)
+# Image URLs 
 image1_url = "https://mycodelesswebsite.com/wp-content/uploads/2022/02/Deco-Glas-Corporate-Website-Example.jpg.webp"  # Replace with your image 1 URL
 image2_url = "https://mycodelesswebsite.com/wp-content/uploads/2023/12/GE-Appliances-Corporate-Website-Design.png.webp"  # Replace with your image 2 URL
 
