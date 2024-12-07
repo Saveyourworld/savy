@@ -52,18 +52,15 @@ def load_lottieurl(url):
         return None
     return r.json()
 
-
-
 # ---- LOAD ASSETS -----https://lottie.host/7b01135c-543a-45d3-8851-2510b26f466a/GQg9v7nMr9.json
 #lottie_coding = load_lottieurl("https://lottie.host/ede2ffe2-8883-4e5c-bd85-a83664225981/vvMkZVteTV.json")
 #img_contact_form = Image.open("fan.webp")
 #img_lottie_animation = Image.open("IMG_1715.jpeg")
 
 
-left_column, right_column = st.columns(2)
-with right_column:
-    st_lottie(lottie_coding, height=300, key="coding")
-
+#left_column, right_column = st.columns(2)
+#with right_column:
+    #st_lottie(lottie_coding, height=300, key="coding")
 st.title(f"My Portfolio", anchor=False)
 st.write("##")
 
@@ -871,8 +868,6 @@ if uploaded_file is not None:
 st.markdown('<p style="text-align: center; color: #87CEEB;">Note: Only upload files you have the rights to share.</p>', unsafe_allow_html=True)
 
 
-
-import streamlit as st
 
 # CSS for styling the landscape review section
 st.markdown("""
